@@ -1,0 +1,138 @@
+/* :root{
+--color-backgound:var()
+} */
+
+.JoinPage{
+    /* background-color: rgb(255, 255, 255);    */
+    background: rgb(232,232,232);
+    background: linear-gradient(90deg, rgba(232,232,232,1) 0%, rgba(241,241,241,1) 39%, rgba(246,246,246,1) 85%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.JoinContainer{
+    background-color: rgb(241 241 241);  
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.JoinContainer > img{
+    width: 10vmax;
+}
+.JoinContainer > h1{
+    color: rgb(0, 0, 0);
+    font-size: 3.5vmax;
+    width: 25vmax;
+    border-bottom: 0.2vmax solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 1vmax;
+    font-family: 'Rubik Iso', cursive;
+    box-sizing: border-box;
+}
+
+/* #joinInput{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    /* border: 0.01rem solid rgb(78, 78, 78);
+    border-bottom: 0.01rem solid rgb(168, 168, 168);
+    width: 25vmax;
+    padding: 1.5vmax;
+    border: none;
+    outline: none;
+    font-size: 1.2vmax;
+    margin: 2vmax;
+    box-sizing: border-box;
+    position: relative;
+}
+#joinInputPassword{
+   
+} */
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputPlace{
+    background-color: rgb(241 241 241);
+    width: 25vmax;
+    padding: 1.1vmax;
+    border: none;
+    outline: none;
+    font-size: 1.2vmax;
+    margin: 1vmax 2vmax;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 0.01rem solid rgb(0, 0, 0);
+}
+
+.joinbtn{
+    width: 25vmax;
+    padding: 1.5vmax;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-family: "Roboto";
+    outline: none;
+    font-size: 1.2vmax;
+    margin: 1vmax 0;
+    border-radius: 2px;
+    background: rgb(255,28,177);
+    background: linear-gradient(90deg, rgba(255,28,177,0.8575805322128851) 0%,
+     rgba(215,78,249,0.86) 39%, rgb(212, 42, 255) 100%);
+   /* background-color: crimson; */
+   box-sizing: border-box;
+   transition: all 0.3s;
+   cursor: pointer;
+}
+.joinbtn:hover{
+    background-color: rgb(180, 27, 58);
+}
+
+
+@media (max-aspect-ratio: 8/10) {
+
+    .JoinPage{
+       
+      
+        display: flex;
+        justify-content: center;
+        align-items: flex-start !important;
+    }
+    .JoinContainer{
+        margin-top: 30vw !important;
+        width: 100% !important;
+    }
+
+    .JoinContainer > img{
+        width: 25vw !important;
+    }
+    /* .JoinContainer > h1{
+      
+        font-size: 6vw !important;
+        width: 65vw !important;
+        border-bottom: 0.6vw solid rgb(0, 0, 0) !important;
+        padding: 3vw !important;
+       
+    } */
+
+    #joinInput{
+        width: 65vw !important;
+        padding: 4vw !important;
+       
+        font-size: 5vw !important;
+        margin:5vw !important;
+       
+    }
+    .joinbtn{
+        width: 65vw !important;
+        padding: 4vw !important;
+        
+        font-size: 5vw !important;
+      
+    }
+}
