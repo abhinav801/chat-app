@@ -29,7 +29,7 @@ const Chat = () => {
         socket = socketIo(ENDPOINT, { transports: ['websocket'] });
 
         socket.on('connect', () => {
-            // alert('Connected');
+            alert('Connected');
             setid(socket.id);
 
         })
@@ -72,7 +72,7 @@ const Chat = () => {
             <div className="chatContainer">
                 <div className="header">
                     <h2>Chat APP</h2>
-                    <Link to="/"><a href="/"> <img src={closeIcon} alt="Close" /></a></Link>
+                    <h2>{user}</h2>
                 </div>
                 <ReactScrollToBottom className="chatBox">
                     {messages.map((item, i) => <Message user={item.id === id ? '' : item.user} message={item.message} classs={item.id === id ? 'right' : 'left'} />)}
